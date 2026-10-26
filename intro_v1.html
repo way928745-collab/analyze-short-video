@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>analyze-short-video · 短视频爆款文案分析与蒸馏创作（v1）</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;background:#0d1117;color:#e6edf3;line-height:1.7;padding:32px 16px}
+.wrap{max-width:900px;margin:0 auto}
+h1{font-size:26px;margin-bottom:4px}
+.sub{color:#8b949e;font-size:14px;margin-bottom:24px}
+h2{font-size:19px;margin:28px 0 12px;border-left:4px solid #d29922;padding-left:10px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px 20px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stat{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}
+.stat b{display:block;font-size:30px;color:#d29922}
+.stat span{font-size:13px;color:#8b949e}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.bar-label{width:150px;font-size:13px;text-align:right;color:#c9d1d9;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-track{flex:1;background:#21262d;border-radius:4px;height:18px;overflow:hidden}
+.bar-fill{background:linear-gradient(90deg,#d29922,#f0b429);height:100%;border-radius:4px}
+.bar-val{width:36px;font-size:13px;color:#8b949e}
+.note{color:#8b949e;font-size:13px;margin-top:24px;border-top:1px solid #30363d;padding-top:12px}
+</style>
+</head>
+<body><div class="wrap">
+<h1>analyze-short-video</h1>
+<div class="sub">短视频爆款文案深度分析 + 蒸馏创作 · v1 基础版 · 数据由 scripts/generate_intro.py 从 references/cases/ 实时统计</div>
+
+<h2>这是什么</h2>
+<div class="card">一套可自我进化的短视频文案方法论：不只分析视频「做了什么」，更提炼「为什么爆、怎么复刻」，并据此创作新时长的可执行文案。遇优秀爆款随时拆解入库，案例库越用越强。</div>
+
+<h2>真实运行数据</h2>
+<div class="grid">
+<div class="stat"><b>78</b><span>已蒸馏案例</span></div>
+<div class="stat"><b>154</b><span>抖音系案例</span></div>
+<div class="stat"><b>122</b><span>可复刻金句</span></div>
+<div class="stat"><b>2026-08-27</b><span>最早入库</span></div>
+</div>
+
+<h2>案例库时长分布</h2>
+<div class="card"><div class="bar-row"><div class="bar-label">3-10min-mid</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">48</div></div>
+<div class="bar-row"><div class="bar-label">10min-plus</div><div class="bar-track"><div class="bar-fill" style="width:42%"></div></div><div class="bar-val">20</div></div>
+<div class="bar-row"><div class="bar-label">15s-3min</div><div class="bar-track"><div class="bar-fill" style="width:21%"></div></div><div class="bar-val">10</div></div></div>
+
+<h2>题材覆盖（按案例卡 track 归纳）</h2>
+<div class="card"><div class="bar-row"><div class="bar-label">财经</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">8</div></div>
+<div class="bar-row"><div class="bar-label">科技</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">8</div></div>
+<div class="bar-row"><div class="bar-label">知识科普</div><div class="bar-track"><div class="bar-fill" style="width:50%"></div></div><div class="bar-val">4</div></div>
+<div class="bar-row"><div class="bar-label">科技资讯</div><div class="bar-track"><div class="bar-fill" style="width:38%"></div></div><div class="bar-val">3</div></div>
+<div class="bar-row"><div class="bar-label">AI工具</div><div class="bar-track"><div class="bar-fill" style="width:38%"></div></div><div class="bar-val">3</div></div>
+<div class="bar-row"><div class="bar-label">深度观点</div><div class="bar-track"><div class="bar-fill" style="width:25%"></div></div><div class="bar-val">2</div></div>
+<div class="bar-row"><div class="bar-label">AI工具教学</div><div class="bar-track"><div class="bar-fill" style="width:25%"></div></div><div class="bar-val">2</div></div>
+<div class="bar-row"><div class="bar-label">AI认知</div><div class="bar-track"><div class="bar-fill" style="width:25%"></div></div><div class="bar-val">2</div></div>
+<div class="bar-row"><div class="bar-label">AI科技</div><div class="bar-track"><div class="bar-fill" style="width:25%"></div></div><div class="bar-val">2</div></div>
+<div class="bar-row"><div class="bar-label">AI工具教程</div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><div class="bar-val">1</div></div></div>
+
+<h2>内容形态 / 商业目标</h2>
+<div class="card"><div class="bar-row"><div class="bar-label">口播</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">8</div></div>
+<div class="bar-row"><div class="bar-label">口播+画面演示</div><div class="bar-track"><div class="bar-fill" style="width:25%"></div></div><div class="bar-val">2</div></div>
+<div class="bar-row"><div class="bar-label">口播+画面解说</div><div class="bar-track"><div class="bar-fill" style="width:25%"></div></div><div class="bar-val">2</div></div>
+<div class="bar-row"><div class="bar-label">画面解说+口播（历史科普）</div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><div class="bar-val">1</div></div>
+<div class="bar-row"><div class="bar-label">口播+画面图解</div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><div class="bar-val">1</div></div>
+<div class="bar-row"><div class="bar-label">口播+屏幕演示（画面解说）</div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><div class="bar-val">1</div></div>
+<div style="margin-top:14px"><div class="bar-row"><div class="bar-label">涨粉/人设</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">13</div></div>
+<div class="bar-row"><div class="bar-label">涨粉/知识变现</div><div class="bar-track"><div class="bar-fill" style="width:69%"></div></div><div class="bar-val">9</div></div>
+<div class="bar-row"><div class="bar-label">涨粉</div><div class="bar-track"><div class="bar-fill" style="width:38%"></div></div><div class="bar-val">5</div></div>
+<div class="bar-row"><div class="bar-label">涨粉/人设/知识变现</div><div class="bar-track"><div class="bar-fill" style="width:23%"></div></div><div class="bar-val">3</div></div>
+<div class="bar-row"><div class="bar-label">涨粉/引流</div><div class="bar-track"><div class="bar-fill" style="width:23%"></div></div><div class="bar-val">3</div></div>
+<div class="bar-row"><div class="bar-label">知识变现/涨粉/人设</div><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div><div class="bar-val">2</div></div></div></div>
+
+<h2>平台覆盖</h2>
+<div class="card"><ul style="padding-left:20px"><li><b>抖音</b>：76 条</li><li><b>抖音/视频号</b>：1 条</li><li><b>抖音(精选App独家/AI创造营)</b>：1 条</li></ul></div>
+
+<div class="note">数据来源：references/cases/ 全部案例卡 frontmatter 与金句段（78 条，2026-08 起持续积累）。本页由生成脚本产出，禁止手填统计。</div>
+</div></body></html>
